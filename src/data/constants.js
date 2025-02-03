@@ -247,8 +247,7 @@ export const experiences = [
       "Jenkins", 
       "AWS"
     ]
-  }
-  ,
+  },
   {
     id: 2,
     img: "/colombomail.png",
