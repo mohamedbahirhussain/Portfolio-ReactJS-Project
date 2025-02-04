@@ -226,8 +226,33 @@ export const experiences = [
   {
     "id": 2,
     "img": "/colombomail.png",
+    "role": "Software Engineer",
+    "company": "Super Save Lanka (PVT) Ltd",
+    "emptype": "Dubai, United Arab Emirates · Full-time",
+    "desc": [
+      "Contributed to the design, development, and maintenance of innovative web solutions, including a Parcel Tracking System, E-commerce Platform, and Workflow Management System.",
+      "Developed a Parcel Tracking System with real-time location updates, secure OTP-based verification, customer chat interface, and an interactive user dashboard.",
+      "Built an E-commerce Platform enabling the sale of foreign products with secure bank card payments and an intuitive user interface for seamless shopping.",
+      "Created a Workflow Management System with task management, real-time notifications, and interactive dashboards for enhanced staff communication and operational efficiency.",
+      "Implemented modern technologies and design patterns such as MVC, Singleton, and microservices architecture for scalability and resilience."
+    ],
+    "skills": [
+      "Java", 
+      "Spring Boot", 
+      "Vue.js", 
+      "REST APIs", 
+      "MySQL", 
+      "PostgreSQL", 
+      "Docker", 
+      "Jenkins", 
+      "AWS"
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/colombomail.png",
     "role": "Associate Software Engineer",
-    "company": "Colombo Mail",
+    "company": "Super Save Lanka (PVT) Ltd",
     "emptype": "Dubai, United Arab Emirates · Full-time",
     "desc": [
       "Contributed to the design, development, and maintenance of innovative web solutions, including a Parcel Tracking System, E-commerce Platform, and Workflow Management System.",
@@ -252,7 +277,7 @@ export const experiences = [
     id: 2,
     img: "/colombomail.png",
     role: "Junior Software Engineer",
-    company: "Colombo Mail",
+    company: "Super Save Lanka (PVT) Ltd",
     emptype: "Dubai, United Arab Emirates · Full-time",
     desc: [
       "Developed API for Bill Payment and Data Management system, streamlining financial processes and ensuring accurate record-keeping.",
@@ -266,7 +291,7 @@ export const experiences = [
     id: 1,
     img: "/colombomail.png",
     role: "Application Administrator & Financial Solution Developer",
-    company: "Colombo Mail",
+    company: "Super Save Lanka (PVT) Ltd",
     emptype: "Colombo, Western Province, Sri Lanka · On-site · Full-time",
     desc: [
       "At ColomboMail, I managed website operations, ensuring seamless functionality and user experience, while also spearheading the development of financial solutions. My contributions included designing and implementing a comprehensive bill payment and data management system, automating workflows, and enhancing transaction accuracy and reporting. This role allowed me to merge technical expertise with problem-solving to streamline operations and drive efficiency.",
