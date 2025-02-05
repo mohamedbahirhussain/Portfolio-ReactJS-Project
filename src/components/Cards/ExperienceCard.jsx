@@ -62,7 +62,7 @@ const Span = styled.span`
 `;
 
 const Card = styled.div`
-    width: 750px;
+    width: 800px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 12px 16px;
