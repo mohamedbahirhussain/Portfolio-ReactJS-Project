@@ -224,121 +224,215 @@ export const skills = [
 
 export const experiences = [
   {
-    "id": 2,
-    "img": "/colombomail.png",
-    "role": "Software Engineer",
-    "company": "Super Save Lanka (PVT) Ltd",
-    "emptype": "Dubai, United Arab Emirates · Full-time",
-    "desc": [
-      "Contributed to the design, development, and maintenance of innovative web solutions, including a Parcel Tracking System, E-commerce Platform, and Workflow Management System.",
-      "Developed a Parcel Tracking System with real-time location updates, secure OTP-based verification, customer chat interface, and an interactive user dashboard.",
-      "Built an E-commerce Platform enabling the sale of foreign products with secure bank card payments and an intuitive user interface for seamless shopping.",
-      "Created a Workflow Management System with task management, real-time notifications, and interactive dashboards for enhanced staff communication and operational efficiency.",
-      "Implemented modern technologies and design patterns such as MVC, Singleton, and microservices architecture for scalability and resilience."
+    id: 1,
+    img: "/colombomail.png",
+    role: "Software Engineer",
+    company: "Super Save Lanka (PVT) Ltd",
+    emptype: "Dubai, United Arab Emirates · Full-time",
+    desc: [
+      "As a Software Engineer at Super Save Lanka, I expanded on my previous roles to take ownership of advanced development and implementation processes, focusing on scalable systems, enhanced user experiences, and seamless integration across platforms. My responsibilities revolved around optimizing system performance, driving FinTech innovation, and delivering impactful, business-critical solutions.",
     ],
-    "skills": [
-      "Java", 
-      "Spring Boot", 
-      "Vue.js", 
-      "REST APIs", 
-      "MySQL", 
-      "PostgreSQL", 
-      "Docker", 
-      "Jenkins", 
-      "AWS"
-    ]
+    keyProjects: [
+      {
+        name: "Advanced Parcel Tracking System",
+        details: [
+          "Integrated machine learning for predictive delivery times and route optimization, enhancing logistics efficiency.",
+          "Upgraded the customer dashboard with analytics and parcel interaction history for improved user engagement.",
+          "Collaborated with third-party APIs to enable real-time updates and coordination with logistics partners.",
+        ],
+      },
+      {
+        name: "FinTech Innovations in E-commerce Platform",
+        details: [
+          "Developed multi-currency payment support with live exchange rate integration.",
+          "Implemented robust fraud detection mechanisms to ensure secure transactions.",
+          "Enhanced backend scalability to handle peak seasonal transaction loads effectively.",
+        ],
+      },
+      {
+        name: "Automation in Workflow Management System",
+        details: [
+          "Introduced AI-driven task prioritization and automated reporting for improved operational efficiency.",
+          "Built real-time collaboration tools, including document sharing and team notifications, to streamline workflows.",
+        ],
+      },
+    ],
+    skills: {
+      technical: [
+        "Java",
+        "Spring Boot",
+        "Vue.js",
+        "REST APIs",
+        "GraphQL",
+        "MySQL",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "AWS",
+        "Azure",
+      ],
+      soft: ["Collaboration", "Team Leadership", "Problem-Solving"],
+    },
+    achievements: [
+      "Increased efficiency by 30% through architecture refinement and code optimization.",
+      "Achieved 100% system uptime by deploying robust monitoring and failover strategies.",
+      "Boosted customer satisfaction ratings by 25% with intuitive designs and dependable performance.",
+      "Advocated agile methodologies, mentored junior developers, and fostered a collaborative work environment.",
+    ],
   },
   {
-    "id": 2,
-    "img": "/colombomail.png",
-    "role": "Associate Software Engineer",
-    "company": "Super Save Lanka (PVT) Ltd",
-    "emptype": "Dubai, United Arab Emirates · Full-time",
-    "desc": [
-      "Contributed to the design, development, and maintenance of innovative web solutions, including a Parcel Tracking System, E-commerce Platform, and Workflow Management System.",
-      "Developed a Parcel Tracking System with real-time location updates, secure OTP-based verification, customer chat interface, and an interactive user dashboard.",
-      "Built an E-commerce Platform enabling the sale of foreign products with secure bank card payments and an intuitive user interface for seamless shopping.",
-      "Created a Workflow Management System with task management, real-time notifications, and interactive dashboards for enhanced staff communication and operational efficiency.",
-      "Implemented modern technologies and design patterns such as MVC, Singleton, and microservices architecture for scalability and resilience."
+    id: 5,
+    img: "/colombomail.png",
+    role: "Associate Software Engineer",
+    company: "Super Save Lanka (PVT) Ltd",
+    emptype: "Dubai, United Arab Emirates · Full-time",
+    keyProjects: [
+      {
+        "name": "Advanced Parcel Tracking System",
+        "details": [
+          "Integrated machine learning for predictive delivery times and route optimization, improving logistics efficiency.",
+          "Developed an upgraded customer dashboard with analytics and interaction history to enhance user experience."
+        ]
+      },
+      {
+        "name": "E-commerce Platform for International Products",
+        "details": [
+          "Built a robust platform to handle multi-currency payments and ensure secure transactions.",
+          "Optimized backend for scalability during high transaction loads, ensuring smooth user experiences during peak seasons."
+        ]
+      },
+      {
+        "name": "Automation in Workflow Management System",
+        "details": [
+          "Developed AI-driven task prioritization and automated reporting, boosting operational efficiency.",
+          "Created real-time collaboration tools, streamlining team communications and task management."
+        ]
+      }
     ],
-    "skills": [
-      "Java", 
-      "Spring Boot", 
-      "Vue.js", 
-      "REST APIs", 
-      "MySQL", 
-      "PostgreSQL", 
-      "Docker", 
-      "Jenkins", 
-      "AWS"
+    "skills": {
+      "technical": ["Java", "Spring Boot", "Vue.js", "REST APIs", "MySQL", "PostgreSQL", "Docker", "AWS", "Jenkins"],
+      "soft": ["Collaboration", "Team Leadership", "Problem-Solving"]
+    },
+    "achievements": [
+      "Improved operational efficiency by 30% through innovative system architecture and code optimization.",
+      "Achieved 100% system uptime by deploying monitoring tools and failover strategies, ensuring high availability.",
+      "Enhanced customer satisfaction by 25% with intuitive designs and a focus on performance optimization."
     ]
   },
   {
     id: 2,
-    img: "/colombomail.png",
     role: "Junior Software Engineer",
     company: "Super Save Lanka (PVT) Ltd",
     emptype: "Dubai, United Arab Emirates · Full-time",
-    desc: [
-      "Developed API for Bill Payment and Data Management system, streamlining financial processes and ensuring accurate record-keeping.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    keyProjects: [
+      {
+        "name": "Bill Payment and Data Management API",
+        "details": [
+          "Developed an API to automate the bill payment process, improving financial data accuracy and transaction speed.",
+          "Implemented best practices for API design, enhancing system performance and reliability."
+        ]
+      }
     ],
-    skills: ["Java", "Spring Boot", "Hibernate", "JDBC", "MySQL"],
+    skills: {
+      "technical": ["Java", "Spring Boot", "Hibernate", "JDBC", "MySQL"],
+      "soft": ["Communication", "Collaboration", "Problem-Solving"]
+    },
+    achievements: [
+      "Contributed to the development of a robust financial system that improved transaction accuracy by 20%.",
+      "Worked with cross-functional teams to ensure high-quality products with a focus on code reviews and maintaining best practices."
+    ]
   },
-  {
-    id: 1,
-    img: "/colombomail.png",
-    role: "Application Administrator & Financial Solution Developer",
-    company: "Super Save Lanka (PVT) Ltd",
-    emptype: "Colombo, Western Province, Sri Lanka · On-site · Full-time",
-    desc: [
-      "At ColomboMail, I managed website operations, ensuring seamless functionality and user experience, while also spearheading the development of financial solutions. My contributions included designing and implementing a comprehensive bill payment and data management system, automating workflows, and enhancing transaction accuracy and reporting. This role allowed me to merge technical expertise with problem-solving to streamline operations and drive efficiency.",
-    ],
-    skills: ["Website Administration", "Financial Analysis", "Reporting and Analysis", "Team Building", "Teamwork"],
-  },
-  {
-    id: 3,
-    img: "/Naascampus.jpeg",
-    role: "Website Developer",
-    company: "Naas Campus",
-    emptype: "Colombo - Contract",
-    desc: [
-      "I designed and developed a dynamic campus website using Vue.js, FireCMS, Firebase, and cloud storage solutions, integrating several key features to enhance functionality and user experience. The project included a secure and efficient online payment system, a dynamic student registration process to simplify enrollment, and real-time notifications to automate updates for students about campus events and announcements. Additionally, I implemented SEO optimization to boost search engine rankings and improve visibility, along with admin customization options to allow administrators to easily update campus details. This high-quality, scalable solution significantly improved campus operational efficiency and provided an enhanced user experience.",
-    ],
-    skills: [
-      "Vue JS",
-      "FireCMS",
-      "Firebase",
-      "API Development",
-      "MySQL",
-      "Agile Web Development",
-    ],
-  },
-  {
-    id: 0,
-    img: "/codechainwithdescription.png",
-    role: "Founder & Chief Executive Officer",
-    company: "CodeChain Labs",
-    emptype: "Colombo, Western Province, Sri Lanka · Freelance",
-    desc: "I am passionate about my work as a freelance software developer and the journey it has taken me on. Through various projects, I have immersed myself in cutting-edge technologies and have enjoyed creating innovative solutions for my clients. Real Client Projects: Developed websites and applications featuring full-fledged CMS, online payment integration, and SEO enhancements. Academic Support: Assisted college students with final year projects, turning their concepts into practical applications. R&D: Engaged in continuous research and integration of new IT technologies to keep projects ahead of the curve. API and AI Integration: Leveraged APIs and integrated AI to develop smart, intuitive applications. Content Writing: Shared knowledge through technical writing and tutorials.",
-    skills: [
-      "Java",
-      "Spring Boot",
-      "Next JS",
-      "React JS",
-      "MySQL",
-      "MongoDB",
-      "Firebase",
-      "FireCMS",
-      "R&D",
-      "Content Writing",
-      "AI Integration",
-      "API Development",
-    ],
-  },
-];
+    {
+      id: 1,
+      img: "/colombomail.png",
+      role: "Application Administrator & Financial Solution Developer",
+      company: "Super Save Lanka (PVT) Ltd",
+      emptype: "Colombo, Western Province, Sri Lanka · On-site · Full-time",
+      keyProjects: [
+        {
+          "name": "Bill Payment and Data Management System",
+          "details": [
+            "Designed and developed a comprehensive system to automate financial workflows, enhancing transaction accuracy and reporting.",
+            "Streamlined bill payment processes, reducing manual intervention by 40%, leading to improved operational efficiency.",
+            "Integrated with third-party payment gateways to ensure secure and reliable financial transactions."
+          ]
+        }
+      ],
+      skills: {
+        "technical": ["Website Administration", "Financial Analysis", "Reporting and Analysis", "Team Building", "Teamwork"],
+        "soft": ["Leadership", "Cross-functional Collaboration", "Time Management", "Problem-Solving"]
+      },
+      achievements: [
+        "Spearheaded the development of a system that improved accuracy in financial transactions, reducing errors by 30%.",
+        "Enhanced system automation, leading to a 25% reduction in manual processing time.",
+        "Developed a reporting tool that improved financial visibility and streamlined decision-making for the company leadership."
+      ]
+    },
+    {
+      id: 3,
+      img: "/Naascampus.jpeg",
+      role: "Website Developer",
+      company: "Naas Campus",
+      emptype: "Colombo · Contract",
+      keyProjects: [
+        {
+          "name": "Naas Campus Website",
+          "details": [
+            "Designed and developed a dynamic campus website using Vue.js, Firebase, and FireCMS, significantly enhancing the user experience.",
+            "Implemented a secure and efficient online payment system and dynamic student registration process.",
+            "Integrated real-time notifications to keep students updated on campus events and announcements."
+          ]
+        }
+      ],
+      skills: {
+        "technical": ["Vue.js", "FireCMS", "Firebase", "MySQL", "API Development", "Agile Web Development"],
+        "soft": ["Client Communication", "Problem-Solving", "Time Management"]
+      },
+      achievements: [
+        "Increased website engagement by 40% by integrating real-time notifications and making the platform more interactive.",
+        "Successfully launched a system that streamlined student registration and payment processes, reducing administrative overhead by 35%."
+      ]
+    },
+    {
+      id: 4,
+      img: "/colombomail.png",
+      role: "Founder & Chief Executive Officer",
+      company: "CodeChain Labs",
+      emptype: "Colombo, Western Province, Sri Lanka · Freelance",
+      keyProjects: [
+        {
+          "name": "Client-Facing Applications",
+          "details": [
+            "Developed websites and applications with integrated CMS, online payment systems, and SEO features, helping clients improve their digital presence."
+          ]
+        },
+        {
+          "name": "AI Integration for Client Projects",
+          "details": [
+            "Integrated AI solutions into client applications to improve user interactions and automate decision-making processes."
+          ]
+        },
+        {
+          "name": "R&D & Content Creation",
+          "details": [
+            "Conducted research on emerging IT technologies, which were then integrated into real client projects.",
+            "Produced technical content and tutorials, sharing industry knowledge with a broader audience."
+          ]
+        }
+      ],
+      skills: {
+        "technical": ["Java", "Spring Boot", "React.js", "Vue.js", "MySQL", "MongoDB", "Firebase", "AI Integration", "API Development", "R&D", "Content Writing"],
+        "soft": ["Entrepreneurship", "Team Leadership", "Client Relationship Management", "Problem-Solving"]
+      },
+      achievements: [
+        "Successfully launched multiple client projects, including full-stack websites with payment integration, increasing clients' operational efficiency by 30%.",
+        "Built a reputation as a reliable freelancer by delivering high-quality, innovative solutions on time.",
+        "Mentored students in the development of final-year projects, turning their ideas into practical applications that exceeded client expectations."
+      ]
+    },
+    
+  ];
 
 export const education = [
   {

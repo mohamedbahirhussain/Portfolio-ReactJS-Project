@@ -1,5 +1,26 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useContext } from 'react';
+import styled, { ThemeContext } from 'styled-components';
+
+// Theme colors
+const lightTheme = {
+    text_primary: '#333',
+    text_secondary: '#777',
+    background: '#fff',
+    cardBackground: '#f4f4f4',
+    cardHover: '#e0e0e0',
+    primary: '#306EE8',
+    border: '#ddd',
+};
+
+const darkTheme = {
+    text_primary: '#e0e0e0',
+    text_secondary: '#bbb',
+    background: '#121212',
+    cardBackground: '#1e1e1e',
+    cardHover: '#2c2c2c',
+    primary: '#4b89ff',
+    border: '#333',
+};
 
 const Document = styled.img`
     display: none;
@@ -7,43 +28,43 @@ const Document = styled.img`
     width: fit-content;
     background-color: #000;
     border-radius: 10px;
-    &:hover{
+    &:hover {
         cursor: pointer;
         opacity: 0.8;
     }
-`
+`;
 
 const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: ${({ theme }) => theme.text_primary};
     margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
         font-size: 12px;
     }
-`
+`;
 
 const Title = styled.div`
     font-size: 16px;
     font-weight: bold;
-    color:rgb(220, 220, 220);
+    color: ${({ theme }) => theme.primary};
     margin-bottom: 5px;
-`
+`;
 
 const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
-`
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+`;
 
 const Card = styled.div`
     width: 750px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 12px 16px;
     justify-content: space-between;
     position: relative;
@@ -51,154 +72,171 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
+    background-color: ${({ theme }) => theme.cardBackground};
+    border: 0.1px solid ${({ theme }) => theme.border};
     transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         transform: translateY(-5px);
+        background-color: ${({ theme }) => theme.cardHover};
     }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
         padding: 10px;
         gap: 8px;
         width: 300px;
     }
 
-    &:hover ${Document}{
+    &:hover ${Document} {
         display: flex;
     }
 
-    &:hover ${Span}{
+    &:hover ${Span} {
         overflow: visible;
         -webkit-line-clamp: unset;
-
     }
-
-    border: 0.1px solid #306EE8;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-`
+`;
 
 const Top = styled.div`
     width: 100%;
     display: flex;
-    gap: 12px
-`
+    gap: 12px;
+`;
 
 const Image = styled.img`
     height: 50px;
     background-color: #000;
     border-radius: 10px;
     margin-top: 4px;
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
         height: 40px;
     }
-`
+`;
 
 const Body = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: column; 
-`
+    flex-direction: column;
+`;
 
 const Role = styled.div`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
+    color: ${({ theme }) => theme.text_primary};
+    @media only screen and (max-width: 768px) {
         font-size: 14px;
     }
-    color:rgb(220, 220, 220);
-`
+`;
 
 const Company = styled.div`
     font-size: 14px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
+    color: ${({ theme }) => theme.text_secondary};
+    @media only screen and (max-width: 768px) {
         font-size: 12px;
     }
-    color:rgb(220, 220, 220);
-`
+`;
 
 const Employeetype = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
+    color: ${({ theme }) => theme.text_secondary};
+    @media only screen and (max-width: 768px) {
         font-size: 10px;
     }
-    color:rgb(220, 220, 220);
-`
-const Location = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
+`;
 
-const Skills = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-top: -10px;
-    color:rgb(220, 220, 220);
-`
+const Section = styled.div`
+    margin-top: 10px;
+`;
 
-const ItemWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-`
+const SectionTitle = styled.div`
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: ${({ theme }) => theme.primary};
+`;
 
-const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
+const SectionItem = styled.div`
+    margin-bottom: 5px;
+    color: ${({ theme }) => theme.text_primary};
+    line-height: 1.5;
+`;
 
 const ExperienceCard = ({ experience }) => {
+    const theme = useContext(ThemeContext);
+
     return (
-        <Card>
+        <Card theme={theme}>
             <Top>
                 <Image src={experience.img} />
                 <Body>
-                    <Role>{experience.role}</Role>
-                    <Company>{experience.company}</Company>
-                    <Employeetype>{experience.emptype}</Employeetype>
-                    <Location>{experience.location}</Location>
+                    <Role theme={theme}>{experience.role}</Role>
+                    <Company theme={theme}>{experience.company}</Company>
+                    <Employeetype theme={theme}>{experience.emptype}</Employeetype>
                 </Body>
             </Top>
-            <Description>
-                {experience?.desc && 
-                    <>
-                        <Title>Description</Title>
-                        <Span>{experience?.desc}</Span>
-                    </>
-                }
-                {experience?.skills && 
-                    <>
-                        <br />
-                        <Skills>
-                            <b>Skills:</b>
-                            <ItemWrapper>
-                                {experience?.skills?.map((skill, index) => (
-                                    <Skill key={index}>• {skill}</Skill>
-                                ))}
-                            </ItemWrapper>
-                        </Skills>
-                    </>
-                }
+            <Description theme={theme}>
+                {experience?.desc && (
+                    <Section>
+                        <SectionTitle theme={theme}>Description</SectionTitle>
+                        {experience.desc.map((item, index) => (
+                            <SectionItem key={index} theme={theme}>{item}</SectionItem>
+                        ))}
+                    </Section>
+                )}
+
+                {experience?.keyProjects && (
+                    <Section>
+                        <SectionTitle theme={theme}>Key Projects</SectionTitle>
+                        {experience.keyProjects.map((project, index) => (
+                            <div key={index}>
+                                <b>{project.name}</b>
+                                <ul>
+                                    {project.details.map((detail, i) => (
+                                        <li key={i} style={{ color: theme.text_secondary }}>
+                                            {detail}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </Section>
+                )}
+
+                {experience?.skills?.technical && (
+                    <Section>
+                        <SectionTitle theme={theme}>Technical Skills</SectionTitle>
+                        <SectionItem theme={theme}>{experience.skills.technical.join(', ')}</SectionItem>
+                    </Section>
+                )}
+
+                {experience?.skills?.soft && (
+                    <Section>
+                        <SectionTitle theme={theme}>Soft Skills</SectionTitle>
+                        <SectionItem theme={theme}>{experience.skills.soft.join(', ')}</SectionItem>
+                    </Section>
+                )}
+
+                {experience?.achievements && (
+                    <Section>
+                        <SectionTitle theme={theme}>Achievements</SectionTitle>
+                        <ul>
+                            {experience.achievements.map((achievement, index) => (
+                                <li key={index} style={{ color: theme.text_secondary }}>
+                                    {achievement}
+                                </li>
+                            ))}
+                        </ul>
+                    </Section>
+                )}
             </Description>
-            {experience.doc &&
+            {experience.doc && (
                 <a href={experience.doc} target="new">
                     <Document src={experience.doc} />
                 </a>
-            }
+            )}
         </Card>
-    )
-}
+    );
+};
 
-export default ExperienceCard
+export default ExperienceCard;
