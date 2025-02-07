@@ -396,7 +396,7 @@ export const experiences = [
     },
     {
       id: 4,
-      img: "/colombomail.png",
+      img: "/codechainwithdescription.png",
       role: "Founder & Chief Executive Officer",
       company: "CodeChain Labs",
       emptype: "Colombo, Western Province, Sri Lanka · Freelance",

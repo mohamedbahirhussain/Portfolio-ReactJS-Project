@@ -162,6 +162,17 @@ const SectionItem = styled.div`
     line-height: 1.5;
 `;
 
+const StyledList = styled.ul`
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 10px;
+
+    li {
+        margin-bottom: 5px;
+        color: ${({ theme }) => theme.text_secondary};
+    }
+`;
+
 const ExperienceCard = ({ experience }) => {
     const theme = useContext(ThemeContext);
 
@@ -191,13 +202,11 @@ const ExperienceCard = ({ experience }) => {
                         {experience.keyProjects.map((project, index) => (
                             <div key={index}>
                                 <b>{project.name}</b>
-                                <ul>
+                                <StyledList theme={theme}>
                                     {project.details.map((detail, i) => (
-                                        <li key={i} style={{ color: theme.text_secondary }}>
-                                            {detail}
-                                        </li>
+                                        <li key={i}>{detail}</li>
                                     ))}
-                                </ul>
+                                </StyledList>
                             </div>
                         ))}
                     </Section>
@@ -220,13 +229,11 @@ const ExperienceCard = ({ experience }) => {
                 {experience?.achievements && (
                     <Section>
                         <SectionTitle theme={theme}>Achievements</SectionTitle>
-                        <ul>
+                        <StyledList theme={theme}>
                             {experience.achievements.map((achievement, index) => (
-                                <li key={index} style={{ color: theme.text_secondary }}>
-                                    {achievement}
-                                </li>
+                                <li key={index}>{achievement}</li>
                             ))}
-                        </ul>
+                        </StyledList>
                     </Section>
                 )}
             </Description>
