@@ -1,6 +1,7 @@
 export const Bio = {
   name: "Mohamed Bahir Hussain",
   roles: [
+    "a Application Programmer",
     "a Full Stack Developer",
     "a JAVA Developer",
     "a API Systems Developer",
