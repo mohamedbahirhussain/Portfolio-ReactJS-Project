@@ -1,26 +1,7 @@
 import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 
-// Theme colors
-const lightTheme = {
-    text_primary: '#333',
-    text_secondary: '#777',
-    background: '#fff',
-    cardBackground: '#f4f4f4',
-    cardHover: '#e0e0e0',
-    primary: '#306EE8',
-    border: '#ddd',
-};
 
-const darkTheme = {
-    text_primary: '#e0e0e0',
-    text_secondary: '#bbb',
-    background: '#121212',
-    cardBackground: '#1e1e1e',
-    cardHover: '#2c2c2c',
-    primary: '#4b89ff',
-    border: '#333',
-};
 
 const Document = styled.img`
     display: none;
@@ -45,12 +26,7 @@ const Description = styled.div`
     }
 `;
 
-const Title = styled.div`
-    font-size: 16px;
-    font-weight: bold;
-    color: ${({ theme }) => theme.primary};
-    margin-bottom: 5px;
-`;
+ 
 
 const Span = styled.span`
     overflow: hidden;
