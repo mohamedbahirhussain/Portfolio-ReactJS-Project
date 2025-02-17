@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import  { keyframes } from "styled-components";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -101,15 +101,18 @@ export const Img = styled.img`
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
   object-fit: cover;
+  margin-top: -250px; /* Moves the image upwards */
 
   @media (max-width: 768px) {
     max-width: 400px;
     max-height: 400px;
+    margin-top: -15px; /* Adjust for smaller screens */
   }
 
   @media (max-width: 640px) {
     max-width: 280px;
     max-height: 280px;
+    margin-top: -10px;
   }
 `;
 
@@ -118,16 +121,53 @@ export const Title = styled.div`
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+  white-space: nowrap;  // Prevent text from wrapping
+
   @media (max-width: 960px) {
     text-align: center;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 700px) {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
   }
 `;
+
+
+// Animation for fade-in and slide-up effect
+const fadeInUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+export const ExperienceText = styled.div`
+  font-weight: 700;
+  font-size: 40px;
+  color: ${({ theme }) => theme.primary};
+  text-align: left;
+  margin-bottom: 16px;
+  animation: ${fadeInUp} 1s ease-out;
+
+  & span {
+    color: white; // Targeting numbers or specific text within ExperienceText
+  }
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+  
+  @media (max-width: 640px) {
+    font-size: 22px;
+  }
+`;
+
 
 export const TextLoop = styled.div`
   font-weight: 600;
@@ -168,37 +208,29 @@ export const SubTitle = styled.div`
 `;
 
 export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px 0;
+  color:${({ theme }) => theme.white};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  &:hover {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+  }
 
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
 `;
