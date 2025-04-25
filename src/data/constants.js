@@ -166,6 +166,10 @@ export const skills = [
     title: "Others",
     skills: [
       {
+        name: "Wso2",
+        image: "/wso2.png",
+      },
+      {
         name: "Power BI",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png",
       },
