@@ -43,7 +43,7 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <ExperienceText>
-              <span>6+</span> Years of Hands on Experience
+              <span>4+</span> Years of Hands on Experience
             </ExperienceText>
 
             <SubTitle>{Bio.description}</SubTitle>
