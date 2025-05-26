@@ -47,17 +47,18 @@ const HeroSection = () => {
             </ExperienceText>
 
             <SubTitle>{Bio.description}</SubTitle>
-            <div style={{ display: "flex", gap: "10px" }}>
-              <ResumeButton href={Bio.resume} target="display">
-                Check Resume
-              </ResumeButton>
-              <ResumeButton href={Bio.experiences} target="display">
-                Check Experience Letter
-              </ResumeButton>
-              <ResumeButton href={Bio.sce} target="display">
-                Check Engineer Council Certificate
-              </ResumeButton>
-            </div>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
+  <ResumeButton href={Bio.resume} target="_blank" rel="noopener noreferrer">
+    Check Resume
+  </ResumeButton>
+  <ResumeButton href={Bio.experiences} target="_blank" rel="noopener noreferrer">
+    Check Experience Letter
+  </ResumeButton>
+  <ResumeButton href={Bio.sce} target="_blank" rel="noopener noreferrer">
+    Check Engineer Council Certificate
+  </ResumeButton>
+</div>
+
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
