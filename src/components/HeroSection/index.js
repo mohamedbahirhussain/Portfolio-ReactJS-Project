@@ -54,6 +54,9 @@ const HeroSection = () => {
               <ResumeButton href={Bio.experiences} target="display">
                 Check Experience Letter
               </ResumeButton>
+              <ResumeButton href={Bio.sce} target="display">
+                Check Engineer Council Certificate
+              </ResumeButton>
             </div>
           </HeroLeftContainer>
 

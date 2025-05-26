@@ -17,6 +17,8 @@ export const Bio = {
     "https://drive.google.com/uc?export=download&id=1yOlv9pDQ8X0vJxo8G5ItN1epOuWgcxK-",
   experiences:
     "https://drive.google.com/uc?export=download&id=1ojQVT1WfSFTmYOQQi-4VaDylM_JXE1YN",
+  sce:
+    "https://drive.google.com/uc?export=download&id=1546z4uaAf7gw8ZE0QeBAWtE-YYO-67Ik",
   linkedin: "https://www.linkedin.com/in/mohamedbahirhussain/",
   twitter: "https://x.com/bahirhussain1",
   insta: "https://www.instagram.com/bahir_hussain_thaj/",
