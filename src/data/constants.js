@@ -14,7 +14,7 @@ export const Bio = {
     "I'm passionate about distributed systems, fintech, healthcare, e-commerce, and more, with a keen interest in integrating AI to drive innovation. I'm deeply engaged with emerging technologies like AI, machine learning, and big data analytics. Continuously exploring and expanding my knowledge in these areas excites me. Let's connect and collaborate on tech discussions or projects!",
   github: "https://github.com/mohamedbahirhussain",
   resume:
-    "https://drive.google.com/uc?export=download&id=1yOlv9pDQ8X0vJxo8G5ItN1epOuWgcxK-",
+    "https://drive.google.com/uc?export=download&id=1WKChRk9ocQa-IHsB_GRUCL-9-IBWNN1b",
   experiences:
     "https://drive.google.com/uc?export=download&id=1ojQVT1WfSFTmYOQQi-4VaDylM_JXE1YN",
   sce:
