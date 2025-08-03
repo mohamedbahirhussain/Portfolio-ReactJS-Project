@@ -51,9 +51,9 @@ const HeroSection = () => {
   <ResumeButton href={Bio.resume} target="_blank" rel="noopener noreferrer">
     Check Resume
   </ResumeButton>
-  <ResumeButton href={Bio.experiences} target="_blank" rel="noopener noreferrer">
+  {/* <ResumeButton href={Bio.experiences} target="_blank" rel="noopener noreferrer">
     Check Experience Letter
-  </ResumeButton>
+  </ResumeButton> */}
   <ResumeButton href={Bio.sce} target="_blank" rel="noopener noreferrer">
     Check Engineer Council Certificate
   </ResumeButton>
