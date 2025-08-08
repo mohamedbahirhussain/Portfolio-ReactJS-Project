@@ -1,12 +1,13 @@
 export const Bio = {
   name: "Mohamed Bahir Hussain",
   roles: [
+    "a Data Analyst",
     "a Application Programmer",
     "a Full Stack Developer",
     "a JAVA Developer",
     "a API Systems Developer",
-    "developing AI Development",
-    "doing R & D",
+    "Developing AI Development",
+    "Doing R & D",
     "a Content Writer",
   ],
   image: "mohamedbahirhussain.jpeg",
@@ -26,6 +27,63 @@ export const Bio = {
 };
 
 export const skills = [
+  {
+  "title": "Data Analyst",
+  "skills": [
+    {
+      "name": "Python",
+      "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+    },
+    {
+      "name": "Pandas",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg"
+    },
+    {
+      "name": "NumPy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg"
+    },
+    {
+      "name": "Power BI",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
+    },
+    {
+      "name": "Tableau",
+      "image": "https://cdn.worldvectorlogo.com/logos/tableau-software.svg"
+    },
+    {
+      "name": "Excel (Advanced)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg"
+    },
+    {
+      "name": "MySQL",
+      "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "https://www.postgresql.org/media/img/about/press/elephant.png"
+    },
+    {
+      "name": "MongoDB",
+      "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+    },
+    {
+      "name": "ETL Pipelines",
+      "image": "https://cdn-icons-png.flaticon.com/512/3039/3039386.png"
+    },
+    {
+      "name": "AWS (S3, RDS, Lambda)",
+      "image": "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    },
+    {
+      "name": "Google BigQuery",
+      "image": "https://www.vectorlogo.zone/logos/google_bigquery/google_bigquery-icon.svg"
+    },
+    {
+      "name": "Data Visualization",
+      "image": "https://cdn-icons-png.flaticon.com/512/1829/1829864.png"
+    }
+  ]
+},
   {
     title: "Frontend",
     skills: [
@@ -541,6 +599,84 @@ export const education = [
 
 export const projects = [
   {
+    id: 1,
+    title: "Automated ETL & Data Pipeline System",
+    description:
+      "Developed an automated ETL pipeline to extract data from multiple sources, transform it into a standardized format, and load it into MySQL and PostgreSQL databases. This system integrated sales, logistics, and customer data, enabling real-time reporting in Power BI. Implemented Python scripts with Pandas and NumPy for data cleaning, transformation, and scheduling. Deployed workflows on AWS Lambda for scalability and cost efficiency.",
+    image: "/dataanalystimg01.png", // ETL pipeline icon
+    tags: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "MySQL",
+      "PostgreSQL",
+      "AWS Lambda",
+      "ETL"
+    ],
+    category: ["data engineering", "data analytics"],
+    github: "https://github.com/HussainMBH/etl-data-pipeline",
+    webapp: "https://github.com/HussainMBH/etl-data-pipeline",
+    developer: [
+      {
+        name: "Mohamed Bahir Hussain",
+        img: "mohamedbahirhussain.jpeg",
+        github: "https://github.com/HussainMBH",
+        linkedin: "https://www.linkedin.com/in/mohamedbahirhussain/"
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Logistics & Parcel Management Data Dashboard",
+    description:
+      "Built an interactive Power BI dashboard for the company’s logistics and parcel tracking operations. Data was sourced from MySQL databases and transformed using Power Query. The dashboard provided real-time KPIs such as delivery times, pending parcels, and route efficiency. Optimized SQL queries to handle large datasets and reduce refresh times by 40%. Enabled data-driven decision-making for operations and route planning.",
+    image: "/logisticsdataanalyst.png", // dashboard icon
+    tags: [
+      "Power BI",
+      "SQL",
+      "MySQL",
+      "Data Visualization",
+      "DAX",
+      "Power Query"
+    ],
+    category: ["data analytics", "business analytics", "data engineering"],
+    github: "https://github.com/HussainMBH/logistics-parcel-dashboard",
+    webapp: "https://github.com/HussainMBH/logistics-parcel-dashboard",
+    developer: [
+      {
+        name: "Mohamed Bahir Hussain",
+        img: "mohamedbahirhussain.jpeg",
+        github: "https://github.com/HussainMBH",
+        linkedin: "https://www.linkedin.com/in/mohamedbahirhussain/"
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "E-Commerce Sales & Customer Insights Platform",
+    description:
+      "Designed and implemented a data analytics solution to monitor e-commerce sales trends, customer purchasing behavior, and inventory turnover. Created SQL-based data models and connected them to Tableau dashboards for visual analytics. Automated daily sales reports and integrated Google BigQuery for large-scale analysis. Provided actionable insights that improved product stocking efficiency by 25%.",
+    image: "/ecommercedataanalyst.png", // analytics & e-commerce icon
+    tags: [
+      "Tableau",
+      "SQL",
+      "Google BigQuery",
+      "Data Modeling",
+      "Business Analytics"
+    ],
+    category: ["business analytics", "e-commerce", "data engineering", "data analytics"],
+    github: "https://github.com/HussainMBH/ecommerce-insights",
+    webapp: "https://github.com/HussainMBH/ecommerce-insights",
+    developer: [
+      {
+        name: "Mohamed Bahir Hussain",
+        img: "mohamedbahirhussain.jpeg",
+        github: "https://github.com/HussainMBH",
+        linkedin: "https://www.linkedin.com/in/mohamedbahirhussain/"
+      }
+    ]
+  },
+  {
     id: 2,
     title: "Gemini AI Integration System",
     description:
@@ -555,7 +691,7 @@ export const projects = [
       "MongoDb",
       "Redux",
     ],
-    category: ["web app", "ai app", "springboot application"],
+    category: ["web app", "ai app", "springboot application", "data engineering"],
     github:
       "https://github.com/HussainMBH/Chat-and-Image-Upload-and-check-Spring-Boot-Vertex-AI-with-Gemini-AI-Integration-API-Function",
     webapp:
@@ -584,7 +720,7 @@ export const projects = [
       "MongoDb",
       "Redux",
     ],
-    category: ["web app", "ai app"],
+    category: ["web app", "ai app", "data engineering"],
     github:
       "https://github.com/HussainMBH/Chatting-and-Image-Analyzing-with-Gemini-AI-Integrating-developed-by-ReactJS-and-Redux",
     webapp: "https://mbhaichat.netlify.app/",
@@ -604,7 +740,7 @@ export const projects = [
       "There have parcel sending and tracking system end to end for customer’s trust. In this project, I add a crud function for branches, employees and parcels. Each parcel has a unique tracking number, I added this function using a few algorithms. Have a check tracking number system, a report view and a print function system. It has two login users, one for admin and a second for company employees.",
     image: "workflow.jpg",
     tags: ["PHP", "MySQL", "Postman API Testing", "JavaScript"],
-    category: ["web app", "springboot application"],
+    category: ["web app", "springboot application", "data engineering"],
     github: "https://github.com/HussainMBH/work-flow-system-final-project",
     webapp: "www.linkedin.com/in/mohamedbahirhussain",
     developer: [
