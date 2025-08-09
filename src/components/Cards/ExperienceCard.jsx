@@ -111,6 +111,14 @@ const Company = styled.div`
         font-size: 12px;
     }
 `;
+const Duration = styled.div`
+    font-size: 14px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary};
+    @media only screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+`;
 
 const Employeetype = styled.div`
     font-size: 12px;
@@ -160,6 +168,7 @@ const ExperienceCard = ({ experience }) => {
                     <Role theme={theme}>{experience.role}</Role>
                     <Company theme={theme}>{experience.company}</Company>
                     <Employeetype theme={theme}>{experience.emptype}</Employeetype>
+                    <Duration theme={theme}>{experience.duration}</Duration>
                 </Body>
             </Top>
             <Description theme={theme}>
