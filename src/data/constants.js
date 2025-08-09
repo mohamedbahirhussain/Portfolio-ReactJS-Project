@@ -296,62 +296,71 @@ export const experiences = [
     role: "Software Engineer & Data Analyst",
     company: "Super Save Lanka (PVT) Ltd",
     emptype: "Dubai, United Arab Emirates · Full-time",
-    duration: "April 2024 – January 2025",
+    duration: "September 2022 – January 2025",
     desc: [
-      "As a Software Engineer & Data Analyst at Super Save Lanka, I led the development and maintenance of a real-time multi-currency FinTech platform, focusing on scalable microservices architecture, data analytics, and business intelligence. My role expanded to encompass advanced system optimization, predictive analytics, and strategic decision support through comprehensive data visualization and financial analysis.",
+      "As a Software Engineer & Data Analyst at Super Save Lanka, I led the design and optimization of data-driven systems, combining software engineering with advanced business intelligence practices. I was responsible for developing real-time data pipelines, building predictive analytics models, and delivering actionable insights that supported executive decision-making and operational efficiency across logistics, e-commerce, and financial platforms."
     ],
     keyProjects: [
       {
         name: "Real-Time Multi-Currency FinTech Platform",
         details: [
-          "Developed and maintained a real-time multi-currency FinTech platform with dynamic currency conversion capabilities.",
-          "Integrated secure payment systems with banking APIs, reducing settlement time by 25%.",
-          "Implemented digital wallet functionality and payment processing with advanced fraud detection mechanisms.",
-        ],
-      },
-      {
-        name: "Microservices Architecture & Cloud Infrastructure",
-        details: [
-          "Designed backend microservices with Spring Boot, improving system throughput by 3x.",
-          "Deployed scalable infrastructure on Google Cloud Platform (GCP) using Docker and CI/CD pipelines.",
-          "Architected hybrid MySQL and MongoDB databases with efficient indexing and normalization strategies.",
-        ],
+          "Developed and maintained a multi-currency FinTech platform with dynamic currency conversion and real-time transaction monitoring.",
+          "Integrated secure payment systems with banking APIs, reducing settlement time by 25% and enhancing reconciliation accuracy.",
+          "Implemented digital wallet functionality with automated fraud detection using transaction pattern analysis."
+        ]
       },
       {
         name: "Business Intelligence & Data Analytics",
         details: [
-          "Built interactive dashboards and data pipelines with Power BI and Python for real-time insights.",
-          "Delivered comprehensive analytics on user behavior, transaction trends, and risk monitoring.",
-          "Conducted predictive analytics for strategic planning, fraud detection, and performance optimization.",
-        ],
+          "Designed and deployed end-to-end ETL pipelines using Python and SQL for automated data ingestion, transformation, and reporting.",
+          "Developed interactive Power BI dashboards to track KPIs for sales, logistics, and financial operations in real time.",
+          "Created predictive models to forecast revenue trends, customer churn, and fraud risks, improving decision-making accuracy by 30%.",
+          "Worked closely with stakeholders to translate business needs into measurable metrics and actionable insights."
+        ]
       },
+      {
+        name: "Microservices Architecture & Cloud Infrastructure",
+        details: [
+          "Architected backend microservices in Spring Boot, improving system throughput by 3x.",
+          "Deployed scalable infrastructure on Google Cloud Platform (GCP) using Docker, Kubernetes, and CI/CD pipelines.",
+          "Optimized hybrid MySQL and MongoDB databases with advanced indexing strategies for faster query performance."
+        ]
+      }
     ],
     skills: {
       technical: [
         "Java",
-        "Spring Boot", 
+        "Spring Boot",
         "Microservices",
         "MySQL",
         "MongoDB",
         "Python",
         "Power BI",
+        "Data Engineering",
+        "ETL",
+        "SQL",
         "GCP",
         "Docker",
         "CI/CD",
-        "FinTech",
-        "Payment Processing",
+        "Business Intelligence",
+        "Predictive Analytics",
         "Fraud Detection",
-        "Data Visualization",
-        "Predictive Analytics"
+        "Data Visualization"
       ],
-      soft: ["Strategic Planning", "Data-Driven Decision Making", "Cross-functional Leadership", "Problem-Solving"],
+      soft: [
+        "Strategic Planning",
+        "Data-Driven Decision Making",
+        "Business Requirement Analysis",
+        "Cross-functional Collaboration",
+        "Problem-Solving"
+      ]
     },
     achievements: [
-      "Improved system throughput by 3x through microservices architecture optimization.",
-      "Reduced payment settlement time by 25% with banking API integration.",
-      "Delivered real-time business intelligence supporting strategic decision-making.",
-      "Implemented robust fraud detection and risk monitoring systems for enhanced security.",
-    ],
+      "Implemented automated ETL workflows reducing manual reporting time by 40%.",
+      "Improved forecasting accuracy by 30% through predictive modeling.",
+      "Reduced payment settlement time by 25% via optimized API integration.",
+      "Delivered real-time business intelligence dashboards that enhanced executive decision-making."
+    ]
   },
   {
     id: 2,
@@ -359,7 +368,7 @@ export const experiences = [
     role: "Associate Software and Database Engineer",
     company: "Super Save Lanka (PVT) Ltd",
     emptype: "Dubai, United Arab Emirates · Full-time",
-    duration: "June 2023 – April 2024",
+    duration: "February 2021 – August 2022",
     desc: [
       "As an Associate Software and Database Engineer, I focused on developing robust tracking systems, optimizing database performance, and implementing scalable web applications. My responsibilities included leading database schema design, maintaining system reliability, and driving operational efficiency through automation and real-time solutions.",
     ],
@@ -420,7 +429,7 @@ export const experiences = [
     role: "Application Administrator and Application Support Engineer",
     company: "Super Save Lanka (PVT) Ltd",
     emptype: "Colombo, Western Province, Sri Lanka · On-site · Full-time",
-    duration: "June 2020 – May 2023",
+    duration: "February 2020 – January 2021",
     desc: [
       "As an Application Administrator and Application Support Engineer, I managed comprehensive website and eCommerce operations while developing critical financial systems. My role encompassed end-to-end system administration, database management, and the development of automated solutions that significantly improved operational efficiency and data accuracy.",
     ],
